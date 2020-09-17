@@ -1,6 +1,6 @@
 # Practice with ActiveRecord basics
 
-Last update: 17-Feb-2019 by @armandofox
+Last update: 17-Sep-2020 by @armandofox
 
 **NOTE: Do not clone this repo.  Fork it first, then clone your fork.**
 
@@ -36,6 +36,16 @@ results
 change to your file, tests are re-run automatically.
 
 * `Gemfile` and `Gemfile.lock`, as usual
+
+## Prerequisite knowledge
+
+If you have never worked with relational databases before, we strongly
+recommend you get some very basic background.  An excellent free resource for learning SQL basics is the
+[Khan Academy SQL tutorial](https://www.khanacademy.org/computing/computer-programming/sql):
+the sections on SQL Basics, More Advanced SQL Queries,
+and Modifying Databases with SQL will suffice for this chapter.
+
+An alternative is [SQLTutorial.org](https://sqltutorial.org), sections 1-4, 11, and 13.
 
 ## Preparation
 
@@ -161,16 +171,6 @@ the `Customer` class and allow you to try things like
 `Customer.where(...)` directly in the REPL (read-eval-print loop).
 
 ## Helpful Hints and Links
-
-
-If you have never worked with relational databases before, we strongly
-recommend you get some very basic background: [Intro to Relational
-Databases](https://lagunita.stanford.edu/courses/DB/RDB/SelfPaced/about)
-and [Relational
-Algebra](https://lagunita.stanford.edu/courses/DB/RA/SelfPaced/about),
-two short (~30 minute) self-paced courses from Stanford's
-highly-respected database group.
-
 
 As usual, you will have to look up the ActiveRecord documentation to
 learn how to get these queries to work, which is part of the learning
