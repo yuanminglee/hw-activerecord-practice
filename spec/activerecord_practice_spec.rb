@@ -24,13 +24,13 @@ describe 'ActiveRecord practice' do
       raise ActiveRecord::Rollback
     end
   end
-  describe 'to find customer(s)' do
+  describe 'to find' do
     before(:each) do
       # disable methods we don't want you to use...
       expect(Customer).not_to receive(:find)
       expect(Customer).not_to receive(:expect)
     end
-    describe 'using .where' do
+    describe 'using .where:' do
       # all of the examples in this describe block should be made
       # to pass by using one or more calls to ActiveRecord's "where()"
       before(:each) do
@@ -61,8 +61,10 @@ describe 'ActiveRecord practice' do
         expect(Customer.last_names_starting_with_b.map(&:id)).to eq( [25,23,4,28,18,21,29,1] )
       end
     end
-    xspecify '20 youngest customers, in any order (hint: lookup ActiveRecord `order` and `limit`)' do
-      check Customer.twenty_youngest, [7,5,6,30,1,10,29,21,18,13,14,28,26,4,2,22,23,12,11,9] 
+    describe 'without needing .where' do
+      xspecify '20 youngest customers, in any order (hint: lookup ActiveRecord `order` and `limit`)' do
+        check Customer.twenty_youngest, [7,5,6,30,1,10,29,21,18,13,14,28,26,4,2,22,23,12,11,9] 
+      end
     end
   end
   describe 'to update' do
