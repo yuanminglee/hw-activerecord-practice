@@ -121,7 +121,7 @@ output should look like this:
 ```
   1) ActiveRecord practice to find customer(s) anyone with first name Candice
      # Temporarily skipped with xspecify
-     # /home/fox/hw-activerecord-intro/spec/activerecord_practice_spec.rb:40
+     # /home/fox/hw-activerecord-intro/spec/activerecord_practice_spec.rb:34
 ```
 
 As the output suggests, take a look at line 40 in the specfile.
